@@ -21,13 +21,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-.clearfix {zoom: 1;}
+.clearfix {
+  zoom: 1;
+}
 .clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /*----------------------------------------------------------------*/
@@ -122,7 +124,6 @@ h2:after {
   line-height: 120%;
   vertical-align: middle;
   margin-top: -5px;
-  
 }
 
 /* -------- LINKS -------- */
@@ -141,7 +142,6 @@ a:active {
   color: #555;
   border-bottom: 1px solid transparent;
 }
-
 
 /* -------- BUTTONS -------- */
 
@@ -190,8 +190,7 @@ a:active {
 /*----------------------------------------------------------------*/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)),
-    url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -290,34 +289,34 @@ header {
 /* HOW IT WORKS */
 /*----------------------------------------------------------------*/
 
-.section-steps{
+.section-steps {
   background-color: #f4f4f4;
 }
 
-.steps-box:first-child{
+.steps-box:first-child {
   text-align: right;
   padding: 3%;
   margin-top: 30px;
 }
 
-.steps-box:last-child{
+.steps-box:last-child {
   padding-left: 3%;
   margin-top: 100px;
 }
 
-.app-screen{
+.app-screen {
   width: 40%;
 }
 
-.works-of-step{
+.works-of-step {
   margin-bottom: 50px;
 }
 
-.works-of-step{
+.works-of-step {
   margin-bottom: 50px;
 }
 
-.works-of-step div{
+.works-of-step div {
   color: #e67e22;
   border: 2px solid #e67e22;
   display: inline-block;
@@ -336,11 +335,10 @@ header {
   border: 0;
 }
 
-.btn-app img{
+.btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
-
 }
 
 /*----------------------------------------------------------------*/
@@ -361,9 +359,8 @@ header {
 /* TESTIMONIALS */
 /*----------------------------------------------------------------*/
 
-.section-testimonials{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)),
-    url(img/back-customers.jpg);
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
@@ -378,7 +375,7 @@ blockquote {
 }
 
 blockquote:before {
-  content: "\201C";
+  content: '\201C';
   font-size: 500%;
   display: block;
   position: absolute;
@@ -397,4 +394,60 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/*----------------------------------------------------------------*/
+/* SIGN-UP */
+/*----------------------------------------------------------------*/
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px rgb(211, 206, 206);
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfcfc;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: none;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box li {
+  padding: 5px 0;
 }
