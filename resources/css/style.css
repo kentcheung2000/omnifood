@@ -199,10 +199,8 @@ input[type='submit'] {
 /*----------------------------------------------------------------*/
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))),
-    url(img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)),
-    url(img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -215,7 +213,7 @@ header {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -224,6 +222,16 @@ header {
   float: left;
   margin-top: 20px;
 }
+
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* MAIN NAV */
 
 .main-nav {
   float: right;
@@ -251,6 +259,34 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* STICKY NAV */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.945);
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.main-nav {
+  margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 20px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 
 /*----------------------------------------------------------------*/
@@ -291,7 +327,7 @@ header {
   width: 100%;
   height: auto;
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
@@ -300,7 +336,7 @@ header {
 
 .meal-photo img:hover {
   -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
   opacity: 1;
 }
 
@@ -378,10 +414,8 @@ header {
 /*----------------------------------------------------------------*/
 
 .section-testimonials {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))),
-    url(img/back-customers.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)),
-    url(img/back-customers.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
