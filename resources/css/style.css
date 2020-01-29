@@ -12,13 +12,15 @@ Orange color: #e67e22
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -301,8 +303,7 @@ header {
 
 .steps-box:first-child {
   text-align: right;
-  padding: 3%;
-  margin-top: 30px;
+  padding-right: 3%;
 }
 
 .steps-box:last-child {
@@ -318,8 +319,8 @@ header {
   margin-bottom: 50px;
 }
 
-.works-of-step {
-  margin-bottom: 50px;
+.works-of-step:last-of-type {
+  margin-bottom: 80px;
 }
 
 .works-of-step div {
