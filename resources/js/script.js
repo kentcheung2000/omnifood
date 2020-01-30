@@ -83,6 +83,21 @@ $(document).ready(function() {
     }
   );
 
+  /* Mobile nav */
+  $('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+
+    nav.slideToggle(200);
+    if (icon.hasName('ion-navicon-round')) {
+      icon.addClass('close');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('close');
+    }
+  });
+
   /* 
   var waypoints = $('#handler-first').waypoint(function(direction) {
     notify(this.element.id + ' hit 25% from top of window') 
