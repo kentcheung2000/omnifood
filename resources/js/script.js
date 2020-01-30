@@ -22,8 +22,6 @@ $(document).ready(function() {
   });
 
   // Add smooth scrolling to all links
-  // Add smooth scrolling to all links
-  // Add smooth scrolling to all links
   $('a').on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== '') {
@@ -47,6 +45,44 @@ $(document).ready(function() {
       );
     } // End if
   });
+
+  /* Navigation scroll */
+  $('.js--wp-1').waypoint(
+    function(direction) {
+      $('.js--wp-1').addClass('animated fadeIn');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
+  $('.js--wp-2').waypoint(
+    function(direction) {
+      $('.js--wp-2').addClass('animated fadeInUp');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
+  $('.js--wp-3').waypoint(
+    function(direction) {
+      $('.js--wp-3').addClass('animated fadeIn');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
+  $('.js--wp-4').waypoint(
+    function(direction) {
+      $('.js--wp-4').addClass('animated pulse');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
   /* 
   var waypoints = $('#handler-first').waypoint(function(direction) {
     notify(this.element.id + ' hit 25% from top of window') 
