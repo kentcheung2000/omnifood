@@ -200,8 +200,8 @@ input[type='submit'] {
 /*----------------------------------------------------------------*/
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))), url(img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))), url(img/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/hero-min.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -430,8 +430,9 @@ header {
 /*----------------------------------------------------------------*/
 
 .section-testimonials {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))), url(img/back-customers.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/back-customers.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.694)), to(rgba(0, 0, 0, 0.694))),
+    url(img/back-customers-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.694)), url(img/back-customers-min.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
